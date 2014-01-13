@@ -11,16 +11,22 @@ python-requests
 
 Example Usage:
 
+Shows the status of the 566 train from LAX to IRV on 2014-01-23
 ```
 ./amtracker.py -y 2014 -m 01 -d 23 --train 566 --origin lax --dest irv
 ```
 
-# Omitting the month a day sets it to the current month and current day
+Omitting the year and month sets it to the current year and current month
 ```
-./amtracker.py -d 23 --train 566 --origin lax --dest irv
+./amtracker.py -d 23 --origin lax --dest irv
 ```
 
-# Shows all relevant train information for today from LAX->IRV
+Shows all relevant train information for today from LAX->IRV
 ```
 ./amtracker.py --origin lax --dest irv
+```
+
+Shows train 585's information for today from LAX->IRV
+```
+./amtracker.py --origin lax --dest irv --train 585
 ```
