@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Author: E.G. Galano
+# Jan 13 2014
 
 import argparse
 from datetime import datetime
