@@ -1,7 +1,7 @@
 amtracker
 =========
 
-Command-line interface to Amtrak train statua and schedule data
+Command-line interface to Amtrak train status and schedule data
 Current destinations only include Los Angeles Union Station and Irvine, CA.
 I will update this to add the remaining train destinations
 
