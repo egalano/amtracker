@@ -100,9 +100,9 @@ def parse_response(amtrak_html):
         second_train["msg"] = second_train["est"].next_sibling.next_sibling.text.strip() # See sibling docs. Two sibs to skip the newline
 
         print()
-        print("{name} - {route} - {action} from {city} at {time} - {date}\n{msg}".format(**first_train))
+        print("{name} - {route} - {action} {city} at {time} - {date}\n{msg}".format(**first_train))
         print("".ljust(60,"-"))
-        print("{name} - {route} - {action} from {city} at {time} - {date}\nNotes: {msg}".format(**second_train))
+        print("{name} - {route} - {action} {city} at {time} - {date}\nNotes: {msg}".format(**second_train))
         print("".ljust(60,"-"))
         print()
 
